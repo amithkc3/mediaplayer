@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIST</title>
+</head>
+<body>
+	<ul>
+	{% for m in mp4s %}
+		<li><a href="/media/{{m}}">{{m}}</a></li>
+	{%endfor%}
+	</ul>
+	<ul>
+	{% for h in h264s %}
+		<li><a href="/convert/{{h}}">{{h}}</a></li>
+	{%endfor%}
+	</ul>
+</body>
+</html>
